@@ -1,0 +1,41 @@
+{
+  "PHP": {
+    "classes": "level-4 bg-info"
+  },
+  "Symfony": {
+    "classes": "level-2 bg-info"
+  },
+  "Zend": {
+    "classes": "level-2 bg-info"
+  },
+  "JavaScript": {
+    "classes": "level-4 bg-info"
+  },
+  "jQuery": {
+    "classes": "level-3 bg-info"
+  },
+  "Underscore": {
+    "classes": "level-2 bg-info"
+  },
+  "CSS/3": {
+    "classes": "level-3 bg-info"
+  },
+  "HTML/5": {
+    "classes": "level-3 bg-info"
+  },
+  "MySQL": {
+    "classes": "level-3 bg-info"
+  },
+  "Redis": {
+    "classes": "level-2 bg-info"
+  },
+  "MongoDB": {
+    "classes": "level-2 bg-info"
+  },
+  "Java": {
+    "classes": "level-1 bg-info"
+  },
+  "Linux&nbsp;/&nbsp;Windows&nbsp;/&nbsp;Mac": {
+    "classes": "level-4 bg-info"
+  }
+}

@@ -1,0 +1,355 @@
+body > .container {
+	width: 8.5in;
+}
+
+
+body > .container > h3 {
+	margin: 10px 0px 2px 0px;
+	text-align: center;
+
+}
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+}
+
+header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+header span.contact {
+	margin: 0px 0px 0px 0px;
+	position: relative;
+}
+
+header span.contact h4 {
+	font-size: 14px;
+}
+
+header span.contact div.linked-in {
+	left: -70px;
+	top: 2px;
+	position: absolute;
+	opacity: 0.8;
+}
+
+header span.contact div.linked-in a {
+	
+}
+
+header span.contact div.linked-in img {
+
+	max-width: 48px;
+	max-height: 48px;
+}
+
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5 {
+	margin: 0px;
+}
+
+
+header h4.email {
+	text-transform: none;
+}
+
+
+header .glyphicon {
+	margin: 0px 8px 0px 0px;
+}
+
+header > span {
+
+}
+
+footer {
+	margin: 0px;
+}
+
+.badge {
+	border-radius: 2px;
+	border: 1px solid #DDD;
+	color: #444444;
+	background: #d9edf7;
+}
+
+.panel {
+	margin-bottom: 4px;
+}
+
+.panel-body {
+	padding: 4px 10px;
+	font-size: 12px;
+}
+
+
+#experience-timeline {
+	margin: 0px 0px 10px 20px;
+	border-left: 1px solid #DDDDDD;
+}
+
+#experience-timeline .company {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+#experience-timeline .company .content {
+	padding: 0px 0px 10px 20px;
+	width: 100%;
+	display: inline-block;
+}
+#experience-timeline .company .content h4.title {
+	margin: 2px 0px 8px 0px;		
+	padding: 0px 0px 0px 8px;	
+	position: relative;
+}
+
+#experience-timeline .company .content h4.title canvas {
+	right: 0px; 
+	top: -6px;
+	position: absolute;
+}
+
+#experience-timeline .company .content h4.title .position {
+	text-transform: none;
+}
+
+#experience-timeline .company .content ul.projects {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#experience-timeline .company .content ul.projects li {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#experience-timeline .company .content ul.projects li:before {
+	z-index: 2;
+	content: " ";
+	height: 10px;
+	width: 10px;
+	left: -26px;
+	top: 50%;
+	margin-top: -5px;
+
+	position: absolute;
+	display: inline-block;
+
+	background: #d9edf7;
+
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+}
+
+#experience-timeline .company .content ul.projects li:after {
+	z-index: 1;
+	content: " ";
+	height: 1px;
+	width: 20px;
+	left: -20px;
+	top: 50%;
+	margin-top: 0px;
+
+	position: absolute;
+	display: inline-block;
+
+	background: #DDDDDD;
+}
+
+#experience-timeline .company .content ul.projects .panel-body label {
+	margin: 0px;
+}
+
+#experience-timeline .company .badge {
+	left: -21px;
+	position: absolute;
+}
+
+#experience-timeline .company .badge.end {
+	top: -9px;
+}
+#experience-timeline .company .badge.start {
+	z-index: 1;
+	bottom: -22px;
+}
+
+#experience-timeline #studymode.company .badge.end {
+	top: -3px;
+}
+#experience-timeline #studymode.company .badge.start {
+	bottom: -28px;
+}
+
+#experience-timeline #education .content {
+	padding: 0px 0px 0px 20px;
+}
+
+#experience-timeline #education .content .title {
+	margin: 0px;
+	text-transform: none;
+	font-size: 14px;
+}
+#experience-timeline #education .content .title img {
+	max-height: 20px;
+	max-width: 20px;
+}
+
+
+#experience-timeline .company:not(:first-child) .badge.end {
+	display: none;
+}
+
+
+#skill-graph {
+	height: 214px;
+	display: flex;
+}
+
+#skill-graph ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#skill-graph ul li {
+	margin: 0px;
+	padding: 0px;
+}
+
+#skill-graph .legend {
+	display: none;
+	margin: 0px 0px 0px 16px;
+	align-self: flex-start;
+}
+
+#skill-graph .legend li {
+	margin: 4px 0px;
+	width: 120px;
+	line-height: 18px;
+	font-size: 10px;
+}
+
+#skill-graph .legend li .img-circle {
+	margin: 0px 8px 0px 0px;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+
+	border: 1px solid #BBBBBB;
+}
+
+/*
+#skill-graph .legend li .img-circle.bg-success {
+	border: 1px solid #d6e9c6;
+}
+#skill-graph .legend li .img-circle.bg-info {
+	border: 1px solid #bce8f1;
+}
+#skill-graph .legend li .img-circle.bg-warning {
+	border: 1px solid #faebcc;
+}
+#skill-graph .legend li .img-circle.bg-danger {
+	border: 1px solid #ebccd1;
+}
+*/
+
+
+#skill-graph ul.vertical-labels {
+	padding: 0px 0px 15px 0px;	
+	width: 70px;
+}
+
+#skill-graph ul.vertical-labels li {
+	padding: 0px 8px 0px 0px;
+	height: 40px;
+	position: relative;
+	text-align: right;
+}
+
+#skill-graph ul.vertical-labels li:after {
+	content: " ";
+	margin-top: -9px;
+	width: 708px;
+	height: 1px;
+	left: 72px;
+	top: 50%;
+	position: absolute;
+	display: inline-block;
+	
+	border-bottom: 1px dashed #DDD;
+}
+
+#skill-graph ul.skills {
+	z-index: 1;
+	padding: 0 20px;
+
+	display: flex;
+	align-items: flex-end;
+
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#skill-graph ul.skills li {
+	margin: 0px 4px 0px 4px;
+	width: 40px;
+
+	display: flex;
+	flex-direction: column-reverse;
+
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	border-top: 1px solid #DDD;	
+}
+
+#skill-graph ul.skills li.level-1 {
+	height: 42px;
+}
+#skill-graph ul.skills li.level-2 {
+	height: 82px;
+}
+#skill-graph ul.skills li.level-3 {
+	height: 122px;
+}
+#skill-graph ul.skills li.level-4 {
+	height: 162px;
+}
+#skill-graph ul.skills li.level-5 {
+	height: 202px;
+}
+
+#skill-graph ul.skills li label {
+	margin: 0px 0px 13px 0px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+}
+
+
+@media print {
+  * {
+    /*color: #000 !important;*/
+    /*text-shadow: none !important;*/
+    /*background: transparent !important;*/
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+
+  header div.linked-in {
+		display: none;
+	}
+
+
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/resume.css">
+</head>
+
+
+<body>
+	<section class="container">
+		<header>
+			<span>
+				<h1 id="myName" class="name">
+					<span class="text">Name</span>
+				</h1>
+				<h5 id="myPosition" class="position">
+					<span class="text">Position</span>
+				</h5>
+			</span>
+			<span class="contact">
+				<h4 id="myHome" class="home">
+					<span class="glyphicon glyphicon-home"></span>
+					<span class="text">Location</span>
+				</h4>
+				<h4 id="myPhone" class="mobile">
+					<span class="glyphicon glyphicon-earphone"></span>
+					<span class="text">Phone</span>
+				</h4>
+				<h4 id="myEmail" class="email">
+					<span class="glyphicon glyphicon-envelope"></span>
+					<a href="#">
+						<span class="text">email</span>
+					</a>
+				</h4>
+				<div id="myLinkedin" class="linked-in">
+					<a href="#" target="_blank">
+						<img src="images/linkedin.svg" class="">
+					</a>
+				</div>
+
+			</span>
+		</header>
+			<h3 class="employment-education">Employment History / Education</h3>
+			<section id="experience-timeline">
+
+			</section>
+			<h3>Techincal Skills</h3>
+			<section id="skill-graph">
+				<ul class="vertical-labels">
+					<li>Master</li>
+					<li>Expert</li>
+					<li>Proficient</li>
+					<li>Familiar</li>
+					<li>Beginner</li>
+				</ul>
+				<ul class="skills">
+				</ul>
+				<div class="legend panel panel-default">
+				  <div class="panel-body">
+				    <ul>
+							<li><span class="img-circle bg-success">&nbsp;</span>Language</li>
+							<li><span class="img-circle bg-info">&nbsp;</span>Framework</li>
+							<li><span class="img-circle bg-danger">&nbsp;</span>Design</li>
+							<li><span class="img-circle bg-warning">&nbsp;</span>Operating System</li>
+						</ul>
+				  </div>
+				</div>
+				
+				
+			</section>
+
+
+	</section>
+
+
+	
+	<!-- Experience Template -->
+	<script id="experienceTemplate" type="text/html">
+		<div id="<%= obj.name ? obj.name : '' %>" class="company">
+<% 
+if (obj.start) { 
+%>
+			<span class="end badge"><%= obj.endMonth ? obj.endMonth + '<br>' : '' %> <%= obj.end ? obj.end : '' %></span> 
+<% 
+} 
+%> 
+			<div class="content <%= obj.classes ? obj.classes: '' %>">
+				<h4 class="title">
+					<%= obj.title ? obj.title : '' %>
+<%
+if (obj.position) {
+%>
+					- <span class="position"><%= obj.position ? obj.position : '' %></span>
+<%
+}
+%>
+					<canvas class="company-logo" height="32" data-url="<%= obj.logo ? obj.logo : '' %>"></canvas>
+				</h4>
+				<ul class="projects">
+<% 
+if (obj.projects) { 
+	_.each(obj.projects, function(desc, title) { 
+%>
+					<li>
+						<div class="panel panel-default">
+						  <div class="panel-body">
+						  	<label class=""><%= title %></label> 
+								- 
+								<%= desc %>
+						  </div>
+						</div>
+					</li>
+<% 
+	}); 
+} 
+%> 
+				</ul>
+			</div>
+			<% if (obj.start) { %>
+			<span class="start badge"><%= obj.startMonth ? obj.startMonth + '<br>'  : '' %> <%= obj.start ? obj.start : '' %></span>
+			<% } %> 
+		</div>
+	</script>
+	
+	<!-- Skill Template -->
+	<script type="text/html" id="skillTemplate">
+		<li class="<%= obj.classes ? obj.classes : ''%>">
+			<label><%= name %></label>
+		</li>
+	</script>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.livequery.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="js/resume.js"></script>
+	
+
+
+</body>
+
+
+</html>
