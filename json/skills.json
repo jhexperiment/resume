@@ -1,41 +1,41 @@
 {
   "PHP": {
-    "classes": "level-4 bg-info"
+    "classes": "level-4 bg-primary"
   },
   "Symfony": {
-    "classes": "level-2 bg-info"
+    "classes": "level-2 bg-info hidden-xs"
   },
   "Zend": {
-    "classes": "level-2 bg-info"
+    "classes": "level-2 bg-info hidden-xs"
   },
   "JavaScript": {
-    "classes": "level-4 bg-info"
+    "classes": "level-almost-5 bg-primary"
   },
   "jQuery": {
-    "classes": "level-3 bg-info"
+    "classes": "level-3 bg-info hidden-xs"
   },
   "Underscore": {
-    "classes": "level-2 bg-info"
+    "classes": "level-2 bg-info hidden-xs"
   },
   "CSS/3": {
-    "classes": "level-3 bg-info"
+    "classes": "level-3 bg-danger"
   },
   "HTML/5": {
-    "classes": "level-3 bg-info"
+    "classes": "level-3 bg-danger"
   },
   "MySQL": {
-    "classes": "level-3 bg-info"
+    "classes": "level-3 bg-success"
   },
   "Redis": {
-    "classes": "level-2 bg-info"
+    "classes": "level-2 bg-success hidden-xs"
   },
   "MongoDB": {
-    "classes": "level-2 bg-info"
+    "classes": "level-2 bg-success hidden-xs"
   },
   "Java": {
-    "classes": "level-1 bg-info"
+    "classes": "level-1 bg-primary hidden-xs"
   },
   "Linux&nbsp;/&nbsp;Windows&nbsp;/&nbsp;Mac": {
-    "classes": "level-4 bg-info"
+    "classes": "level-4 bg-warning hidden-xs"
   }
 }

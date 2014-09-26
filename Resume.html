@@ -16,6 +16,7 @@
 					<span class="text">Name</span>
 				</h1>
 				<h5 id="myPosition" class="position">
+					<span class="glyphicon glyphicon-briefcase visible-xs-inline-block"></span>
 					<span class="text">Position</span>
 				</h5>
 			</span>
@@ -34,9 +35,10 @@
 						<span class="text">email</span>
 					</a>
 				</h4>
-				<div id="myLinkedin" class="linked-in">
+				<div id="myLinkedin" class="linked-in hidden-xs">
 					<a href="#" target="_blank">
-						<img src="images/linkedin.svg" class="">
+						<img src="images/linkedin.svg" class="default">
+						<img src="images/linkedin-hover.png" class="hover">
 					</a>
 				</div>
 
@@ -49,26 +51,25 @@
 			<h3>Techincal Skills</h3>
 			<section id="skill-graph">
 				<ul class="vertical-labels">
-					<li>Master</li>
-					<li>Expert</li>
-					<li>Proficient</li>
-					<li>Familiar</li>
-					<li>Beginner</li>
+					<li><span class="text">Master</span></li>
+					<li><span class="text">Expert</span></li>
+					<li><span class="text">Proficient</span></li>
+					<li><span class="text">Familiar</span></li>
+					<li><span class="text">Novice</span></li>
 				</ul>
 				<ul class="skills">
 				</ul>
-				<div class="legend panel panel-default">
-				  <div class="panel-body">
-				    <ul>
-							<li><span class="img-circle bg-success">&nbsp;</span>Language</li>
+				<div class="legend panel panel-default hidden-xs">
+					<div class="panel-body">
+						<ul>
+							<li><span class="img-circle bg-primary">&nbsp;</span>Language</li>
 							<li><span class="img-circle bg-info">&nbsp;</span>Framework</li>
 							<li><span class="img-circle bg-danger">&nbsp;</span>Design</li>
+							<li><span class="img-circle bg-success">&nbsp;</span>Database</li>
 							<li><span class="img-circle bg-warning">&nbsp;</span>Operating System</li>
 						</ul>
-				  </div>
+					</div>
 				</div>
-				
-				
 			</section>
 
 
@@ -88,15 +89,21 @@ if (obj.start) {
 %> 
 			<div class="content <%= obj.classes ? obj.classes: '' %>">
 				<h4 class="title">
-					<%= obj.title ? obj.title : '' %>
+					<span class="text"><%= obj.title ? obj.title : '' %></span>
 <%
 if (obj.position) {
 %>
-					- <span class="position"><%= obj.position ? obj.position : '' %></span>
+					&nbsp;-&nbsp;<span class="position"><%= obj.position ? obj.position : '' %></span>
+<%
+}
+
+if (obj.logo) {
+%>
+					<canvas class="company-logo hidden-xs" height="32" data-url="<%= obj.logo ? obj.logo : '' %>"></canvas>
 <%
 }
 %>
-					<canvas class="company-logo" height="32" data-url="<%= obj.logo ? obj.logo : '' %>"></canvas>
+					
 				</h4>
 				<ul class="projects">
 <% 
