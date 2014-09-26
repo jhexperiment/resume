@@ -202,8 +202,13 @@ footer {
 	bottom: -34px;
 }
 
+#experience-timeline #superb.company .badge.start {
+	bottom: -20px;
+}
+
 #experience-timeline #education .content {
 	padding: 0px 0px 0px 20px;
+	float: left;
 }
 
 #experience-timeline #education .content .title {
