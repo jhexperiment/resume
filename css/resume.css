@@ -317,7 +317,7 @@ footer {
 
 #skill-graph ul.skills {
 	z-index: 1;
-	padding: 0 20px;
+	padding: 0 170px 0 20px;
 	height: 200px;
 	width: 100%;
 
@@ -395,6 +395,7 @@ footer {
 	#skill-graph {
 		width: 80%;
 	}
+
 }
 
 @media print {
@@ -421,10 +422,6 @@ footer {
 
 	#skill-graph .legend {
 		display: inline-block !important;
-	}
-
-	#skill-graph ul.skills {
-		padding: 0 170px 0 20px;
 	}
 
 	#skill-graph {
