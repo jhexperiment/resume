@@ -1,4 +1,54 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?o3abzp');
+	src:url('../fonts/icomoon.eot?#iefixo3abzp') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?o3abzp') format('woff'),
+		url('../fonts/icomoon.ttf?o3abzp') format('truetype'),
+		url('../fonts/icomoon.svg?o3abzp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mailielem-icon:before {
+	content: "\31";
+}
+.icon-linkedin-hover:before {
+	content: "\32";
+}
+.icon-mexipass-icon:before {
+	content: "\33";
+}
+.icon-studymode-icon:before {
+	content: "\34";
+}
+.icon-superb-icon:before {
+	content: "\35";
+}
+.icon-graduation-cap-icon:before {
+	content: "\36";
+}
+
+
+img.desaturate {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
 
 body > .container > h3 {
 	margin: 10px 0px 2px 0px;
@@ -118,20 +168,27 @@ footer {
 }
 #experience-timeline .company .content h4.title {
 	margin: 2px 0px 8px 0px;		
-	padding: 0px 0px 0px 8px;	
+	padding: 0px 0px 0px 40px;	
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-#experience-timeline .company .content h4.title canvas {
+#experience-timeline .company .content h4.title .company-logo {
 	margin: 0px 0px 0px 10px;
 }
 
 #experience-timeline .company .content h4.title .position {
 	text-transform: none;
+	font-size: smaller;
 }
+#experience-timeline .company .content h4.title [class^="icon-"], 
+#experience-timeline .company .content h4.title [class*=" icon-"] {
+	margin: 0px 0px 0px 8px;
+	font-size: 32px;	
+}
+
 
 #experience-timeline .company .content ul.projects {
 	margin: 0px;
@@ -188,11 +245,16 @@ footer {
 }
 
 #experience-timeline .company .badge.end {
-	top: -9px;
+	top: 0px;
 }
 #experience-timeline .company .badge.start {
 	z-index: 1;
 	bottom: -28px;
+}
+
+#experience-timeline .company .badge.timeline {
+	top: 8px;
+	left: -41px;
 }
 
 #experience-timeline #studymode.company .badge.end {
@@ -200,6 +262,10 @@ footer {
 }
 #experience-timeline #studymode.company .badge.start {
 	bottom: -34px;
+}
+#experience-timeline #studymode.company .badge.timeline {
+	left: -34px;
+	top: -6px;
 }
 
 #experience-timeline #superb.company .badge.start {
@@ -212,19 +278,22 @@ footer {
 }
 
 #experience-timeline #education .content .title {
+	padding: 0px 0px 0px 20px;
 	margin: 0px;
 	text-transform: none;
 	font-size: 14px;
 }
+#experience-timeline #education .content .title .icon-graduation-cap-icon {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
 #experience-timeline #education .content .title img {
 	max-height: 20px;
 	max-width: 20px;
 }
 
 
-#experience-timeline .company:not(:first-child) .badge.end {
-	display: none;
-}
 
 
 #skill-graph {
@@ -246,7 +315,7 @@ footer {
 
 #skill-graph .legend {
 	right: 0px;
-	top: 0px;
+	top: -26px;
 	position: absolute;
 	
 	
@@ -254,7 +323,7 @@ footer {
 
 #skill-graph .legend li {
 	margin: 4px 0px;
-	width: 140px;
+	width: 120px;
 	line-height: 18px;
 	font-size: 13px;
 }
@@ -268,6 +337,9 @@ footer {
 }
 
 
+#skill-graph .legend li .img-circle.bg-primary {
+       border: 1px solid #357ebd;
+}
 #skill-graph .legend li .img-circle.bg-success {
        border: 1px solid #d6e9c6;
 }
@@ -293,7 +365,7 @@ footer {
 
 #skill-graph ul.vertical-labels li {
 	padding: 0px 0px 0px 0px;
-	height: 20%;
+	height: 30px;
 	width: 100%;
 	position: relative;
 	text-align: left;
@@ -305,7 +377,7 @@ footer {
 	width: 100%;
 	height: 1px;
 	left: 0px;
-	top: 0px;
+	top: -1px;
 	position: absolute;
 	display: inline-block;
 	
@@ -313,17 +385,32 @@ footer {
 }
 
 #skill-graph ul.vertical-labels li span.text {
-	margin: 0px 0 0 -80px;
-  width: 70px;
+	width: 120px;
+	left: -130px;
+	top: -9px;
+  position: absolute;
   display: inline-block;
   text-align: right;
-    
+  line-height: 1;
 }
+
+#skill-graph ul.vertical-labels li span.text.advanced-beginner {
+	top: -16px;
+}
+
+#skill-graph .horizontal-labels {
+  padding: 0 170px 0 0px;
+  display: flex;
+	align-items: flex-end;
+  justify-content: space-around;
+
+}
+
 
 #skill-graph ul.skills {
 	z-index: 1;
 	padding: 0 170px 0 20px;
-	height: 200px;
+	height: 180px;
 	width: 100%;
 
 	display: flex;
@@ -340,32 +427,60 @@ footer {
 	display: flex;
 	flex-direction: column-reverse;
 
+	overflow: hidden;
+
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
 	border-top: 1px solid #DDD;	
 }
 
+#skill-graph ul.skills li.bg-primary {
+	border-color: #357ebd;
+}
+#skill-graph ul.skills li.bg-info {
+	border-color: #bce8f1;
+}
+#skill-graph ul.skills li.bg-danger {
+	border-color: #ebccd1;
+}
+#skill-graph ul.skills li.bg-success {
+	border-color: #d6e9c6;
+}
+#skill-graph ul.skills li.bg-warning {
+	border-color: #faebcc;
+}
+
+
+#skill-graph ul.skills li.level-0 {
+	height: 0px;
+}
 #skill-graph ul.skills li.level-1 {
-	height: 20%;
+	height: 30px;
 }
 #skill-graph ul.skills li.level-2 {
-	height: 40%;
+	height: 60px;
 }
 #skill-graph ul.skills li.level-3 {
-	height: 60%;
+	height: 90px;
+}
+#skill-graph ul.skills li.level-almost-4 {
+	height: 105px;
 }
 #skill-graph ul.skills li.level-4 {
-	height: 80%;
+	height: 120px;
 }
 #skill-graph ul.skills li.level-almost-5 {
-	height: 90%;
+	height: 135px;
 }
 #skill-graph ul.skills li.level-5 {
-	height: 100%;
+	height: 150px;
 }
 
 #skill-graph ul.skills li label {
 	margin: 0px 0px 13px 0px;
+
+	font-size: 12px;
+
 	transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -380,7 +495,7 @@ footer {
 	}
 
 	#experience-timeline .company .badge.end {
-		top: -9px;
+		top: 0px;
 	}
 	#experience-timeline .company .badge.start {
 		bottom: -26px;
@@ -440,9 +555,9 @@ footer {
 		width: auto;
 	}
 
-	#experience-timeline .company .content h4.title canvas.hidden-xs {
+	#experience-timeline .company .content h4.title .company-logo {
 		
-		display: inline-block !important;
+		visibility: hidden;
 
 	}
 

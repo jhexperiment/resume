@@ -38,7 +38,7 @@
 				<div id="myLinkedin" class="linked-in hidden-xs">
 					<a href="#" target="_blank">
 						<img src="images/linkedin.svg" class="default">
-						<img src="images/linkedin-hover.png" class="hover">
+						<img src="images/linkedin-hover.svg" class="hover">
 					</a>
 				</div>
 
@@ -48,14 +48,15 @@
 			<section id="experience-timeline">
 
 			</section>
-			<h3>Techincal Skills</h3>
+			<h3>Technical Skills</h3>
 			<section id="skill-graph">
 				<ul class="vertical-labels">
-					<li><span class="text">Master</span></li>
-					<li><span class="text">Expert</span></li>
-					<li><span class="text">Proficient</span></li>
-					<li><span class="text">Familiar</span></li>
-					<li><span class="text">Novice</span></li>
+					<li><span class="text master">Master</span></li>
+					<li><span class="text expert">Expert</span></li>
+					<li><span class="text proficient">Proficient</span></li>
+					<li><span class="text competent">Competent</span></li>
+					<li><span class="text advanced-beginner">Advanced-Beginner</span></li>
+					<li><span class="text novice">Novice</span></li>
 				</ul>
 				<ul class="skills">
 				</ul>
@@ -66,9 +67,12 @@
 							<li><span class="img-circle bg-info">&nbsp;</span>Framework</li>
 							<li><span class="img-circle bg-danger">&nbsp;</span>Design</li>
 							<li><span class="img-circle bg-success">&nbsp;</span>Database</li>
-							<li><span class="img-circle bg-warning">&nbsp;</span>Operating System</li>
+							<li><span class="img-circle bg-warning">&nbsp;</span>Version Control</li>
 						</ul>
 					</div>
+				</div>
+				<div class="horizontal-labels">
+					<span>Front-End</span><span>Back-End</span>
 				</div>
 			</section>
 
@@ -80,17 +84,32 @@
 	<!-- Experience Template -->
 	<script id="experienceTemplate" type="text/html">
 		<div id="<%= obj.name ? obj.name : '' %>" class="company">
+
 <% 
-if (obj.start) { 
+if ( ! obj.timeline && obj.end ) { 
 %>
 			<span class="end badge"><%= obj.endMonth ? obj.endMonth + '<br>' : '' %> <%= obj.end ? obj.end : '' %></span> 
 <% 
 } 
+else if ( obj.timeline ) {
+%>
+	<span class="timeline badge"><%= obj.timeline ? obj.timeline : '' %></span> 
+<%
+}
 %> 
 			<div class="content <%= obj.classes ? obj.classes: '' %>">
 				<h4 class="title">
-					<span class="text"><%= obj.title ? obj.title : '' %></span>
 <%
+if (obj.companyUrl) {
+%>
+					<a href="<%= obj.companyUrl ? obj.companyUrl : '#' %>" class="text"><%= obj.title ? obj.title : '' %></a>
+<%
+}
+else {
+%>
+					<span class="text"><%= obj.title ? obj.title : '' %></span>
+<%					
+}
 if (obj.position) {
 %>
 					&nbsp;-&nbsp;<span class="position"><%= obj.position ? obj.position : '' %></span>
@@ -99,7 +118,8 @@ if (obj.position) {
 
 if (obj.logo) {
 %>
-					<canvas class="company-logo hidden-xs" height="32" data-url="<%= obj.logo ? obj.logo : '' %>"></canvas>
+					<!--<img class="company-logo desaturate hidden-xs" height="32" src="<%= obj.logo ? obj.logo : '' %>">-->
+					<span class="company-logo icon-<%= obj.name ? obj.name : '' %>-icon">&nbsp;</span>
 <%
 }
 %>
@@ -125,15 +145,19 @@ if (obj.projects) {
 %> 
 				</ul>
 			</div>
-			<% if (obj.start) { %>
+<% 
+if (obj.start) { 
+%>
 			<span class="start badge"><%= obj.startMonth ? obj.startMonth + '<br>'  : '' %> <%= obj.start ? obj.start : '' %></span>
-			<% } %> 
+<% 
+} 
+%> 
 		</div>
 	</script>
 	
 	<!-- Skill Template -->
 	<script type="text/html" id="skillTemplate">
-		<li class="<%= obj.classes ? obj.classes : ''%>">
+		<li class="<%= obj.classes ? obj.classes : ''%>  <%= obj.spacer ? 'spacer' : '' %>">
 			<label><%= name %></label>
 		</li>
 	</script>

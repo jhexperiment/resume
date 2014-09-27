@@ -1,13 +1,11 @@
 {
   "studymode": {
   	"position": "Web Developer",
+  	"companyUrl": "http://www.studymode.com",
   	"classes": "",
     "title": "Studymode",
-    "start": 2014,
-    "startMonth": "Jan",
-    "end": 2014,
-    "endMonth": "Aug",
-    "logo": "images/studymode-icon.png",
+    "timeline": "Jan&nbsp;-&nbsp;Aug<br>2014",
+    "logo": "images/studymode-icon.svg",
     "projects": {
       "WYSIWYG": "Enhanced CKEditor WYSIWYG (What You See Is What You Get) editor and created server security filters. Programmed featured product for flashcard site monitization.",
       "HTML5 Viewer": "Researched and implemented pdf2htmlEX with soffice to convert uploaded essay documents into HTML5 and enhance front-end user experience.",
@@ -17,11 +15,11 @@
   },
   "mexipass": {
   	"position": "Web Developer / IT Administrator",
+  	"companyUrl": "http://www.mexipass.com",
   	"classes": "",
     "title": "Mexipass",
-    "start": 2011,
-    "end": 2014,
-    "logo": "images/mexipass-icon.png",
+    "timeline": "2011&nbsp;-&nbsp;2014",
+    "logo": "images/mexipass-icon.svg",
     "projects": {
       "Web Portals": "Developed a custom Joomla content management system (CMS) site to act as the Client and Marketing Staff interface to the company partnered Policy Enterprise software.",
       "ProtegeMex Prototype v2": "Implemented a second prototype website ported from v1 adding new features to streamline content updates by Sales Team. Added i18n internationalization, and implemented custom CMS.",
@@ -32,11 +30,11 @@
   },
   "mailielem": {
   	"position": "Web Developer",
+  	"companyUrl": "http://www.hawaiipublicschools.org/ParentsAndStudents/EnrollingInSchool/SchoolFinder/Pages/Maili-Elementary.aspx",
   	"classes": "",
     "title": "Maili Elementary School",
-    "start": 2010,
-    "end": 2011,
-    "logo": "images/doe-icon.png",
+    "timeline": "2010&nbsp;-&nbsp;2011",
+    "logo": "images/hidoe-icon.svg",
     "projects": {
       "Inventory Management": "Created a web app to manage general, electronics, and keys inventories streamlining staff operations.",
       "Absence Calendar": "Reduced filing errors by creating a web app to track paper form submissions of teacher absences.",
@@ -45,17 +43,18 @@
   },
   "superb": {
   	"position": "Web Developer",
+  	"companyUrl": "http://www.superb.net",
   	"classes": "",
     "title": "Superb Internet",
-    "start": 2009,
-    "end": 2010,
-    "logo": "images/superb-icon.png",
+    "timeline": "2009&nbsp;-&nbsp;2010",
+    "logo": "images/superb-icon.svg",
     "projects": {
       "Superb Registrar": "Increased user retention rates by re-writing workflow logic of existing Domain Registrar web app."
     }
   },
   "education": {
-		"postion": "",
-		"title": "<img src=\"images/graduation-cap-icon.png\">&nbsp;Bachelor in Computer Science - University of Hawai`i, Manoa"
+		"end": 2009,
+    "postion": "",
+		"title": "<span class=\"icon-graduation-cap-icon\"></span>&nbsp;Bachelor in Computer Science - University of Hawai`i, Manoa"
 	}
 }
