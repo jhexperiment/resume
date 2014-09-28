@@ -7127,5 +7127,53 @@ footer {
     visibility: hidden !important;
   }
 }
+.no-flexbox header {
+  display: block;
+}
+.no-flexbox header span.contact div.linked-in {
+  left: auto;
+  top: auto;
+  display: inline-block;
+  position: relative;
+  float: right;
+  opacity: 0.8;
+}
+.no-flexbox #experience-timeline .company .content h4.title {
+  display: block;
+}
+.no-flexbox #skill-graph .horizontal-labels {
+  display: block;
+}
+.no-flexbox #skill-graph .horizontal-labels span {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .no-flexbox #skill-graph .horizontal-labels {
+    padding: 0 50% 0 0;
+  }
+}
+.no-flexbox #skill-graph ul.skills {
+  padding: 44px 170px 0 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+.no-flexbox #skill-graph ul.skills li {
+  width: 20px;
+  position: relative;
+  display: inline-block;
+}
+.no-flexbox #skill-graph ul.skills li label {
+  margin: 0px;
+  left: 0px;
+  bottom: 8px;
+  position: absolute;
+}
+@media (max-width: 991px) {
+  .no-flexbox #skill-graph ul.skills {
+    padding: 44px 0px 0 20px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
