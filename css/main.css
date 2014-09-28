@@ -6619,10 +6619,25 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
 }
 
 header span.contact {
@@ -6680,6 +6695,9 @@ footer {
 }
 
 .badge {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
   border-radius: 2px;
   border: 1px solid #DDD;
   color: #444444;
@@ -6699,55 +6717,52 @@ footer {
   margin: 0px 0px 10px 20px;
   border-left: 1px solid #DDDDDD;
 }
-
 #experience-timeline .company {
   padding: 0px;
   margin: 0px;
   position: relative;
 }
-
 #experience-timeline .company .content {
   padding: 0px 0px 10px 20px;
   width: 100%;
   display: inline-block;
 }
-
 #experience-timeline .company .content h4.title {
   margin: 2px 0px 8px 0px;
   padding: 0px 0px 0px 40px;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
   align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
 }
-
 #experience-timeline .company .content h4.title .company-logo {
   margin: 0px 0px 0px 10px;
 }
-
 #experience-timeline .company .content h4.title .position {
   text-transform: none;
   font-size: smaller;
 }
-
-#experience-timeline .company .content h4.title [class^="icon-"],
-#experience-timeline .company .content h4.title [class*=" icon-"] {
-  margin: 0px 0px 0px 8px;
-  font-size: 32px;
-}
-
 #experience-timeline .company .content ul.projects {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-
 #experience-timeline .company .content ul.projects li {
   margin: 0px;
   padding: 0px;
   position: relative;
 }
-
 #experience-timeline .company .content ul.projects li:before {
   z-index: 2;
   content: " ";
@@ -6759,10 +6774,12 @@ footer {
   position: absolute;
   display: inline-block;
   background: #d9edf7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #DDDDDD;
 }
-
 #experience-timeline .company .content ul.projects li:after {
   z-index: 1;
   content: " ";
@@ -6775,64 +6792,51 @@ footer {
   display: inline-block;
   background: #DDDDDD;
 }
-
 #experience-timeline .company .content ul.projects .panel-body label {
   margin: 0px;
 }
-
 #experience-timeline .company .badge {
   left: -21px;
   position: absolute;
 }
-
 #experience-timeline .company .badge.end {
   top: 0px;
 }
-
 #experience-timeline .company .badge.start {
   z-index: 1;
   bottom: -28px;
 }
-
 #experience-timeline .company .badge.timeline {
   top: 8px;
   left: -41px;
 }
-
 #experience-timeline #studymode.company .badge.end {
   top: 2px;
 }
-
 #experience-timeline #studymode.company .badge.start {
   bottom: -34px;
 }
-
 #experience-timeline #studymode.company .badge.timeline {
   left: -34px;
   top: -6px;
 }
-
 #experience-timeline #superb.company .badge.start {
   bottom: -20px;
 }
-
 #experience-timeline #education .content {
   padding: 0px 0px 0px 20px;
   float: left;
 }
-
 #experience-timeline #education .content .title {
   padding: 0px 0px 0px 20px;
   margin: 0px;
   text-transform: none;
   font-size: 14px;
 }
-
 #experience-timeline #education .content .title .icon-graduation-cap-icon {
   font-size: 20px;
   vertical-align: middle;
 }
-
 #experience-timeline #education .content .title img {
   max-height: 20px;
   max-width: 20px;
@@ -6843,31 +6847,26 @@ footer {
   width: 90%;
   position: relative;
 }
-
 #skill-graph ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-
 #skill-graph ul li {
   margin: 0px;
   padding: 0px;
 }
-
 #skill-graph .legend {
   right: 0px;
   top: -26px;
   position: absolute;
 }
-
 #skill-graph .legend li {
   margin: 4px 0px;
   width: 120px;
   line-height: 18px;
   font-size: 13px;
 }
-
 #skill-graph .legend li .img-circle {
   margin: 0px 8px 0px 0px;
   height: 20px;
@@ -6875,27 +6874,21 @@ footer {
   display: inline-block;
   border: 1px solid #BBBBBB;
 }
-
 #skill-graph .legend li .img-circle.bg-primary {
   border: 1px solid #357ebd;
 }
-
 #skill-graph .legend li .img-circle.bg-success {
   border: 1px solid #d6e9c6;
 }
-
 #skill-graph .legend li .img-circle.bg-info {
   border: 1px solid #bce8f1;
 }
-
 #skill-graph .legend li .img-circle.bg-warning {
   border: 1px solid #faebcc;
 }
-
 #skill-graph .legend li .img-circle.bg-danger {
   border: 1px solid #ebccd1;
 }
-
 #skill-graph ul.vertical-labels {
   z-index: -1;
   min-width: 100%;
@@ -6904,7 +6897,6 @@ footer {
   top: -0px;
   position: absolute;
 }
-
 #skill-graph ul.vertical-labels li {
   padding: 0px 0px 0px 0px;
   height: 30px;
@@ -6912,11 +6904,9 @@ footer {
   position: relative;
   text-align: left;
 }
-
 #skill-graph ul.vertical-labels li:last-child {
   border-bottom: 1px solid #000;
 }
-
 #skill-graph ul.vertical-labels li:after {
   content: " ";
   margin-top: 0px;
@@ -6928,7 +6918,6 @@ footer {
   display: inline-block;
   border-bottom: 1px dashed #DDD;
 }
-
 #skill-graph ul.vertical-labels li span.text {
   width: 120px;
   left: -130px;
@@ -6938,99 +6927,109 @@ footer {
   text-align: right;
   line-height: 1;
 }
-
 #skill-graph ul.vertical-labels li span.text.advanced-beginner {
   top: -16px;
 }
-
 #skill-graph .horizontal-labels {
   padding: 0 170px 0 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
   align-items: flex-end;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
   justify-content: space-around;
 }
-
 #skill-graph ul.skills {
   z-index: 1;
   padding: 0 170px 0 20px;
   height: 180px;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
   align-items: flex-end;
   border-left: 1px solid #000;
 }
-
 #skill-graph ul.skills li {
   margin: 0px 4px 1px 4px;
   width: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   overflow: hidden;
   border-left: 1px solid #DDD;
   border-right: 1px solid #DDD;
   border-top: 1px solid #DDD;
 }
-
 #skill-graph ul.skills li.bg-primary {
   border-color: #357ebd;
 }
-
 #skill-graph ul.skills li.bg-info {
   border-color: #bce8f1;
 }
-
 #skill-graph ul.skills li.bg-danger {
   border-color: #ebccd1;
 }
-
 #skill-graph ul.skills li.bg-success {
   border-color: #d6e9c6;
 }
-
 #skill-graph ul.skills li.bg-warning {
   border-color: #faebcc;
 }
-
 #skill-graph ul.skills li.level-0 {
   height: 0px;
 }
-
 #skill-graph ul.skills li.level-1 {
   height: 30px;
 }
-
 #skill-graph ul.skills li.level-2 {
   height: 60px;
 }
-
 #skill-graph ul.skills li.level-3 {
   height: 90px;
 }
-
 #skill-graph ul.skills li.level-almost-4 {
   height: 105px;
 }
-
 #skill-graph ul.skills li.level-4 {
   height: 120px;
 }
-
 #skill-graph ul.skills li.level-almost-5 {
   height: 135px;
 }
-
 #skill-graph ul.skills li.level-5 {
   height: 150px;
 }
-
 #skill-graph ul.skills li label {
   margin: 0px 0px 13px 0px;
   font-size: 12px;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 @media (max-width: 639px) {
@@ -7041,11 +7040,9 @@ footer {
   #skill-graph {
     margin: 10px 0px 0px 80px;
   }
-
   #skill-graph ul.skills {
     padding: 0px 20px;
   }
-
   #skill-graph .horizontal-labels {
     padding: 0 20px 0 0;
   }
@@ -7058,21 +7055,17 @@ footer {
   #experience-timeline .company .badge.end {
     top: 0px;
   }
-
   #experience-timeline .company .badge.start {
     bottom: -26px;
   }
-
-  #experience-timeline #studymode.company .badge.end {
-    top: 0px;
-  }
-
-  #experience-timeline #studymode.company .badge.start {
-    bottom: -34px;
-  }
-
   #experience-timeline .company .content h4.title .text {
     width: 100%;
+  }
+  #experience-timeline .company#studymode .badge.end {
+    top: 0px;
+  }
+  #experience-timeline .company#studymode .badge.start {
+    bottom: -34px;
   }
 
   #skill-graph {
@@ -7081,9 +7074,6 @@ footer {
 }
 @media print {
   * {
-    /*color: #000 !important;*/
-    /*text-shadow: none !important;*/
-    /*background: transparent !important;*/
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
@@ -7096,20 +7086,19 @@ footer {
     display: none;
   }
 
-  #skill-graph ul.skills li.hidden-xs,
-  #skill-graph ul.skills li.hidden-xxs {
-    display: flex !important;
-  }
-
-  #skill-graph .legend {
-    display: inline-block !important;
-  }
-
   #skill-graph {
     padding: 0 170px 0 20px !important;
     width: 90%;
   }
-
+  #skill-graph ul.skills li .hidden-xs {
+    display: flex !important;
+  }
+  #skill-graph ul.skills li .hidden-xxs {
+    display: flex !important;
+  }
+  #skill-graph .legend {
+    display: inline-block !important;
+  }
   #skill-graph .legend li.hidden-xxs {
     display: block !important;
   }
@@ -7117,11 +7106,9 @@ footer {
   #experience-timeline .company .content h4.title {
     margin: 0 0 4px !important;
   }
-
   #experience-timeline .company .content h4.title .text {
     width: auto;
   }
-
   #experience-timeline .company .content h4.title .company-logo {
     display: inline-block !important;
     visibility: hidden !important;
