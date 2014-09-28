@@ -5,7 +5,7 @@
   "jQuery": {
     "classes": "level-4 bg-info hidden-xs"
   },
-  "Underscore": {
+  "Underscore.js": {
     "classes": "level-3 bg-info hidden-xs"
   },
   "HTML/5": {
@@ -34,13 +34,13 @@
     "classes": "level-4 bg-success"
   },
   "MongoDB": {
-    "classes": "level-3 bg-success hidden-xs"
+    "classes": "level-3 bg-success"
   },
   "Redis": {
-    "classes": "level-3 bg-success hidden-xs"
+    "classes": "level-3 bg-success"
   },
   "Git&nbsp;/&nbsp;Mercurial": {
-    "classes": "level-4 bg-warning hidden-xs"
+    "classes": "level-4 bg-warning hidden-xxs"
   },
   "Java": {
     "classes": "level-2 bg-primary hidden-xs"

@@ -7,7 +7,7 @@
     "timeline": "Jan&nbsp;-&nbsp;Aug<br>2014",
     "logo": "images/studymode-icon.svg",
     "projects": {
-      "WYSIWYG": "Enhanced CKEditor WYSIWYG (What You See Is What You Get) editor and created server security filters. Programmed featured product for flashcard site monitization.",
+      "WYSIWYG": "Enhanced CKEditor WYSIWYG (What You See Is What You Get) editor and created server security filters. Programmed featured product for flashcard site monetization.",
       "HTML5 Viewer": "Researched and implemented pdf2htmlEX with soffice to convert uploaded essay documents into HTML5 and enhance front-end user experience.",
       "Language Detection": "Researched and integrated Google's Compact Language Detector 2 (CLD) library with flashcard site to support Text-To-Speech feature integration.",
       "Solve.com": "Built user interface to solve mathematical equations and provide step by step analysis of the solution. Strategized in a team-environment for new beta product."
@@ -54,7 +54,7 @@
   },
   "education": {
 		"end": 2009,
-    "postion": "",
+    "position": "",
 		"title": "<span class=\"icon-graduation-cap-icon\"></span>&nbsp;Bachelor in Computer Science - University of Hawai`i, Manoa"
 	}
 }
